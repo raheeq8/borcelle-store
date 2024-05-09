@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import HeartFavourite from "./HeartFavourite";
 
+
+
 interface ProductCardProps {
   product: ProductType;
   updateSignedInUser?: (updatedUser: UserType) => void;
@@ -27,7 +29,7 @@ const ProductCard = ({ product, updateSignedInUser }: ProductCardProps) => {
         <p className="text-small-medium text-grey-2">{product.category}</p>
       </div>
       <div className="flex justify-between items-center">
-        <p className="text-body-bold">{product.price["$numberDecimal"]}</p>
+        <p className="text-body-bold">{product.price}</p>
         <HeartFavourite product={product} updateSignedInUser={updateSignedInUser}/>
       </div>
     </Link>

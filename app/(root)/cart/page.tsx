@@ -1,12 +1,12 @@
 "use client";
-import useCart from "@/lib/useHook";
+import useCart, { CartStore } from "@/lib/useHook";
 import { useUser } from "@clerk/nextjs";
-import { auth } from "@clerk/nextjs/server";
 import { MinusCircle, PlusCircle, Trash } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
+
+
 
 const Cart = () => {
   const cart = useCart();

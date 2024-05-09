@@ -13,9 +13,7 @@ type CollectionType = {
     category: string;
     collections: [string];
     tags: [string];
-    price: {
-      $numberDecimal: string;
-    };
+    price: number;
     cost: number;
     sizes: [string];
     colors: [string];
@@ -48,3 +46,6 @@ type CollectionType = {
     shippingRate: string;
     totalAmount: number
   }
+
+
+  

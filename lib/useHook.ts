@@ -9,7 +9,7 @@ interface CartItem {
   size?: string;
 }
 
-interface CartStore {
+export interface CartStore {
   cartItems: CartItem[];
   addItem: (item: CartItem) => void;
   removeItem: (_id: string) => void;
